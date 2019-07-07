@@ -1,0 +1,58 @@
+{
+  "description": "Set pulse amplitude of red LED. ",
+  "nodes": [
+    {
+      "id": "Hy5W361br",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Amplitude. Values: 0x00 = 0mA, 0x7F = 25.4mA, 0xFF = 50mA (typical).",
+      "id": "SkG2ApJbH",
+      "label": "AMP",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "A MAX30102 device.",
+      "id": "rk3inaJZB",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-max30102-device"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "ry-dTakZr",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Update. Trigger for setting pulse amplitude of red LED.",
+      "id": "ry5sz01bH",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 {
+  "description": "Configure MAX30102 sensor.",
   "nodes": [
     {
       "id": "B1FzT4J-H",
