@@ -1,2 +1,130 @@
 {
+  "nodes": [
+    {
+      "id": "B1FzT4J-H",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A MAX30102 device.\n",
+      "id": "H1OXpN1Wr",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-max30102-device"
+    },
+    {
+      "description": "Update. Triggers setup.",
+      "id": "Hy-lBr1ZS",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "1Fh"
+      },
+      "description": "Power level (LED brightness). Options: 0=Off to 255=50mA.",
+      "id": "HySDp4yWS",
+      "label": "PWR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "4096"
+      },
+      "description": "ADC range. Options: 2048, 4096, 8192, 16384.",
+      "id": "HyYB0NkbB",
+      "label": "ADC",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "4d"
+      },
+      "description": "Sample Average. Options: 1, 2, 4, 8, 16, 32.",
+      "id": "SJUcT4J-S",
+      "label": "SA",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "3d"
+      },
+      "description": "LED mode. Options: 1 = Red only, 2 = Red + IR, 3 = Red + IR + Green.",
+      "id": "Skf3aEJ-r",
+      "label": "LED",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "400"
+      },
+      "description": "Sample Rate. Options: 50, 100, 200, 400, 800, 1000, 1600, 3200.",
+      "id": "SkizREkWr",
+      "label": "SR",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Pulse on completion of setup.",
+      "id": "rk5sREJZB",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "411"
+      },
+      "description": "Pulse Width. Options: 69, 118, 215, 411.",
+      "id": "ryzNRN1ZB",
+      "label": "PW",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
 }

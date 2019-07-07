@@ -28,7 +28,7 @@ void evaluate(Context ctx) {
     auto state = getState(ctx);
 
     // Create a new object in the memory area reserved previously.
-    Type airSensor = new (state->mem) SCD30();
+    Type sensor = new (state->mem) MAX30105();
 
-    emitValue<output_DEV>(ctx, airSensor);
+    emitValue<output_DEV>(ctx, sensor);
 }

@@ -1,2 +1,61 @@
 {
+  "description": "Initializes MAX30102 device.",
+  "nodes": [
+    {
+      "description": "A MAX30102 device.",
+      "id": "By6iV81-B",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-max30102-device"
+    },
+    {
+      "description": "Pulse if initialization successful.",
+      "id": "Hkmjk341WB",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Trigger for initialization. Default is to initialize on boot.",
+      "id": "Hybs1nE1br",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse if initialization failed.",
+      "id": "HylsJ2NkWS",
+      "label": "ERR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "SkoyhNJ-r",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
 }
