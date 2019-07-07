@@ -44,6 +44,9 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "boundLiterals": {
+        "__out__": "1Fh"
+      },
       "description": "Amplitude. Values: 0x00 = 0mA, 0x7F = 25.4mA, 0xFF = 50mA (typical).",
       "id": "ryGQklJlZB",
       "label": "AMP",
