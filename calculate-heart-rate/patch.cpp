@@ -1,9 +1,9 @@
 
 struct State {
-    const byte RATE_SIZE; //Increase this for more averaging. 4 is good.
+    static const uint8_t RATE_SIZE =4; //Increase this for more averaging. 4 is good.
     uint8_t rates[RATE_SIZE]; //Array of heart rates
-    uint8_t rateSpot;
-    long lastBeat; //Time at which the last beat occurred
+    uint8_t rateSpot=0;
+    long lastBeat=0; //Time at which the last beat occurred
     float beatsPerMinute;
     int beatAvg;
 };
@@ -18,15 +18,7 @@ void evaluate(Context ctx) {
     // get state
     State* state = getState(ctx);
 
-    if (isSettingUp())
-    {
-        state->RATE_SIZE = 4;
-        state->rates[state->RATE_SIZE];
-        state->rateSpot = 0;
-        state->lastBeat = 0;
-    }
-
-    long irValue = getValue<input_IR>(ctx);
+    int32_t irValue = getValue<input_IR>(ctx);
     
     if (checkForBeat(irValue) == true)
     {
@@ -41,7 +33,7 @@ void evaluate(Context ctx) {
             state->rateSpot %= state->RATE_SIZE; //Wrap variable
             //Take average of readings
             state->beatAvg = 0;
-            for (byte x = 0 ; x < state->RATE_SIZE ; x++)
+            for (uint8_t x = 0 ; x < state->RATE_SIZE ; x++)
                 state->beatAvg += state->rates[x];
             state->beatAvg /= state->RATE_SIZE;
             emitValue<output_BPM>(ctx,state->beatsPerMinute);
