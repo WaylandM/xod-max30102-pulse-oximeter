@@ -1,4 +1,5 @@
 {
+  "description": "Detects pulse and reports heart rate.",
   "links": [
     {
       "id": "BJDS5le-S",
@@ -12,14 +13,14 @@
       }
     },
     {
-      "id": "BJWOqlxZH",
+      "id": "BJRU7nxZH",
       "input": {
-        "nodeId": "HyvPcexbS",
-        "pinKey": "HkXK-dGob"
+        "nodeId": "HJzTG2ebS",
+        "pinKey": "__in__"
       },
       "output": {
-        "nodeId": "S18tJqxeWr",
-        "pinKey": "rJ5aBUy-S"
+        "nodeId": "r1NE9xgbH",
+        "pinKey": "r146NJx-S"
       }
     },
     {
@@ -45,14 +46,14 @@
       }
     },
     {
-      "id": "H1W7Lcle-B",
+      "id": "HkdLm3gZS",
       "input": {
-        "nodeId": "HymIqleZH",
-        "pinKey": "HkXK-dGob"
+        "nodeId": "Skb8m2eZS",
+        "pinKey": "__in__"
       },
       "output": {
-        "nodeId": "HkxQI9ggZB",
-        "pinKey": "r1yhZRd8W"
+        "nodeId": "r1NE9xgbH",
+        "pinKey": "Hy5h8xebr"
       }
     },
     {
@@ -64,6 +65,17 @@
       "output": {
         "nodeId": "B1rOYxe-H",
         "pinKey": "rkaoV4y-r"
+      }
+    },
+    {
+      "id": "Hy3IX2l-H",
+      "input": {
+        "nodeId": "HkqRG2ebH",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r1NE9xgbH",
+        "pinKey": "By8OSgebS"
       }
     },
     {
@@ -89,14 +101,14 @@
       }
     },
     {
-      "id": "S1tU9ex-B",
+      "id": "S156Q3xbr",
       "input": {
-        "nodeId": "HkxQI9ggZB",
-        "pinKey": "HJAq-A_8-"
+        "nodeId": "ByYuFgxZr",
+        "pinKey": "Hybs1nE1br"
       },
       "output": {
-        "nodeId": "r1NE9xgbH",
-        "pinKey": "Hy5h8xebr"
+        "nodeId": "r1ZpX3xZH",
+        "pinKey": "__out__"
       }
     },
     {
@@ -133,17 +145,6 @@
       }
     },
     {
-      "id": "SyeP5xeWS",
-      "input": {
-        "nodeId": "SyeFk9egZS",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "r1NE9xgbH",
-        "pinKey": "By8OSgebS"
-      }
-    },
-    {
       "id": "SyhjFlxbr",
       "input": {
         "nodeId": "H1MKYexbr",
@@ -163,28 +164,6 @@
       "output": {
         "nodeId": "H1MKYexbr",
         "pinKey": "rk5sREJZB"
-      }
-    },
-    {
-      "id": "rJCIqlxbS",
-      "input": {
-        "nodeId": "Bktk9llbr",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "r1NE9xgbH",
-        "pinKey": "r146NJx-S"
-      }
-    },
-    {
-      "id": "rJLI9xg-H",
-      "input": {
-        "nodeId": "HkNYJqlgWH",
-        "pinKey": "HJAq-A_8-"
-      },
-      "output": {
-        "nodeId": "r1NE9xgbH",
-        "pinKey": "ryYjHegZS"
       }
     },
     {
@@ -232,17 +211,6 @@
       }
     },
     {
-      "id": "ryOFkqxxZr",
-      "input": {
-        "nodeId": "HyMKkcgeWB",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HkNYJqlgWH",
-        "pinKey": "r1yhZRd8W"
-      }
-    },
-    {
       "id": "rya4acgbr",
       "input": {
         "nodeId": "HJtEa5eWB",
@@ -251,6 +219,28 @@
       "output": {
         "nodeId": "H1lhFexbB",
         "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryiUXhxWB",
+      "input": {
+        "nodeId": "rJFl72e-r",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r1NE9xgbH",
+        "pinKey": "ryYjHegZS"
+      }
+    },
+    {
+      "id": "ryx2m2l-r",
+      "input": {
+        "nodeId": "rki9m3xZS",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S18tJqxeWr",
+        "pinKey": "rJ5aBUy-S"
       }
     }
   ],
@@ -293,20 +283,6 @@
       "type": "xod/patch-nodes/to-bus"
     },
     {
-      "id": "Bktk9llbr",
-      "position": {
-        "units": "slots",
-        "x": 7,
-        "y": 7
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
-    },
-    {
       "id": "ByYuFgxZr",
       "position": {
         "units": "slots",
@@ -347,22 +323,26 @@
       "type": "@/set-pulse-amplitude-red"
     },
     {
-      "id": "HkNYJqlgWH",
+      "description": "Heart rate (beats per minute).",
+      "id": "HJzTG2ebS",
+      "label": "BPM",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Average heart rate (beats per minute).",
+      "id": "HkqRG2ebH",
+      "label": "AvgBPM",
       "position": {
         "units": "slots",
         "x": 11,
-        "y": 6
+        "y": 5
       },
-      "type": "xod/core/count"
-    },
-    {
-      "id": "HkxQI9ggZB",
-      "position": {
-        "units": "slots",
-        "x": 14,
-        "y": 6
-      },
-      "type": "xod/core/count"
+      "type": "xod/patch-nodes/output-number"
     },
     {
       "id": "Hy5FKgx-H",
@@ -373,48 +353,6 @@
         "y": 1
       },
       "type": "xod/patch-nodes/to-bus"
-    },
-    {
-      "id": "HyMKkcgeWB",
-      "position": {
-        "units": "slots",
-        "x": 11,
-        "y": 7
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
-    },
-    {
-      "id": "HymIqleZH",
-      "position": {
-        "units": "slots",
-        "x": 14,
-        "y": 7
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
-    },
-    {
-      "id": "HyvPcexbS",
-      "position": {
-        "units": "slots",
-        "x": 5,
-        "y": 7
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
     },
     {
       "boundLiterals": {
@@ -439,6 +377,17 @@
       "type": "xod/patch-nodes/from-bus"
     },
     {
+      "description": "Pulse on each read of IR signal.\n",
+      "id": "Skb8m2eZS",
+      "label": "READ",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
       "id": "SkdvUol-S",
       "label": "INTD",
       "position": {
@@ -456,20 +405,6 @@
         "y": 4
       },
       "type": "xod/core/defer"
-    },
-    {
-      "id": "SyeFk9egZS",
-      "position": {
-        "units": "slots",
-        "x": 9,
-        "y": 7
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
     },
     {
       "id": "SyyiKxxZB",
@@ -491,6 +426,31 @@
       "type": "@/calculate-heart-rate"
     },
     {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Initialize heart rate monitor.",
+      "id": "r1ZpX3xZH",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on heartbeat.",
+      "id": "rJFl72e-r",
+      "label": "BEAT",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
       "id": "rk4eyhlbr",
       "position": {
         "units": "slots",
@@ -498,6 +458,17 @@
         "y": 2
       },
       "type": "xod/core/any"
+    },
+    {
+      "description": "Infrared value.",
+      "id": "rki9m3xZS",
+      "label": "IR",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-number"
     }
   ]
 }

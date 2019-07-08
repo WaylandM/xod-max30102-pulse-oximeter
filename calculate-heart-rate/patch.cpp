@@ -18,7 +18,7 @@ void evaluate(Context ctx) {
     // get state
     State* state = getState(ctx);
 
-    int32_t irValue = getValue<input_IR>(ctx);
+    long irValue = getValue<input_IR>(ctx);
     
     if (checkForBeat(irValue) == true)
     {

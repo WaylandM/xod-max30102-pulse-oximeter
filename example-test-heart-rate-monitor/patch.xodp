@@ -1,0 +1,181 @@
+{
+  "description": "Using debug mode to test operation of heart rate monitor.",
+  "links": [
+    {
+      "id": "B1YZP3gZS",
+      "input": {
+        "nodeId": "BJiCUheZH",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S11bDheWS",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "B1wWv3ebr",
+      "input": {
+        "nodeId": "HyYCUnebB",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "Hk3JDhebH",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "ByhWD3xZS",
+      "input": {
+        "nodeId": "SyHp8nlbS",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "Hkd5S2eWS",
+        "pinKey": "rki9m3xZS"
+      }
+    },
+    {
+      "id": "HkRWw2eZS",
+      "input": {
+        "nodeId": "HkTaLnebr",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "Hkd5S2eWS",
+        "pinKey": "HJzTG2ebS"
+      }
+    },
+    {
+      "id": "SkgGD2lbr",
+      "input": {
+        "nodeId": "rJHR8nx-S",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "Hkd5S2eWS",
+        "pinKey": "HkqRG2ebH"
+      }
+    },
+    {
+      "id": "rJGZvhg-S",
+      "input": {
+        "nodeId": "Hk3JDhebH",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "Hkd5S2eWS",
+        "pinKey": "rJFl72e-r"
+      }
+    },
+    {
+      "id": "rkEbv3xZr",
+      "input": {
+        "nodeId": "S11bDheWS",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "Hkd5S2eWS",
+        "pinKey": "Skb8m2eZS"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJiCUheZH",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Hk3JDhebH",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "HkTaLnebr",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Hkd5S2eWS",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/heart-rate-monitor"
+    },
+    {
+      "id": "HyYCUnebB",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "S11bDheWS",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "SyHp8nlbS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "rJHR8nx-S",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}
